@@ -1,0 +1,253 @@
+html {
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0px;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 75px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.link {
+  background-color: grey;
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  height: 20px;
+  padding: 10px 20px 20px 20px;
+  margin-right: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.link:hover {
+  color: red;
+  border-radius: 50px;
+  background-color: rgb(59, 59, 59);
+}
+
+nav #tendina {
+  display: none;
+  margin-right: 5%;
+  z-index: 1;
+}
+
+nav #tendina div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+header {
+  height: 400px;
+  background-image: url("images/header-image.jpg");
+  background-position: center;
+  background-color: #cccccc;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header #ov {
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+header h1 {
+  color: black;
+  font-size: 2.3em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+section #profile {
+  margin-top: -54px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+section #profile #photo {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  border: 4px solid whitesmoke;
+  background-image: url(images/FOTOTESSERA.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+section #profile h3 {
+  font-size: 1rem;
+  margin: 0.2rem;
+  margin-block-end: 0;
+}
+section #profile p {
+  font-size: 0.7rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-style: oblique 60deg;
+}
+
+section {
+  background: rgb(239, 233, 175);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 66.67%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article {
+  margin-bottom: 120px;
+  padding: 7px;
+  display: flex;
+}
+
+article .id {
+  margin-right: 40px;
+  font-size: 2em;
+}
+
+article .descr {
+  width: 100%;
+  height: 100%;
+}
+
+article .art_title {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+article .art {
+  font-size: 1.1em;
+  margin: 20px 0;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+article .art_img {
+  background-size: cover;
+  background-position: center;
+  height: 90%;
+  width: 100%;
+}
+
+footer {
+  height: 100px;
+  background: Black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+}
+
+footer strong {
+  font-size: 1em;
+}
+
+footer p {
+  margin-block-start: 0.3em;
+  font-size: 0.7em;
+}
+
+@media (max-width: 700px) {
+  nav .link {
+    display: none;
+  }
+  .link{
+    font-size: 1.5em;
+  }
+  label{
+    font-size: 1.5em;
+  }
+  #tendina {
+    display: block;
+  }
+  header {
+    height: 200px;
+  }
+  html {
+    font-size: 10px;
+  }
+  section {
+    width: 95%;
+  }
+}
+
+#search{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+#search_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+#content, #service {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+}
+
+.submit {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: 1.5em;
+}
+
+.submit:hover {
+  background-color: #3e8e41;
+}
+
+#ris_ricerca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ris_ricerca .link{
+  width: 100%;
+  max-width: 450px;
+  margin: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: .8em;
+
+}
